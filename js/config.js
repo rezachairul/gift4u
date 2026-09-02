@@ -7,12 +7,14 @@ const BIRTHDAY_CONFIG = {
 
   // 20 file foto: 10 foto berbeda untuk baris atas + 10 berbeda untuk bawah.
   topPhotos: [
-    "photo01.svg","photo02.svg","photo03.svg","photo04.svg","photo05.svg",
-    "photo06.svg","photo07.svg","photo08.svg","photo09.svg","photo10.svg"
+    "photo01.jpg","photo02.jpg","photo03.jpg","photo04.jpg","photo05.jpg",
+    "photo06.jpg","photo07.jpg","photo08.jpg","photo09.jpg","photo10.jpg",
+    "photo11.jpg","photo12.jpg",
   ],
   bottomPhotos: [
-    "photo11.svg","photo12.svg","photo13.svg","photo14.svg","photo15.svg",
-    "photo16.svg","photo17.svg","photo18.svg","photo19.svg","photo20.svg"
+    "photo13.jpg","photo14.jpg","photo15.jpg","photo16.jpg","photo17.jpg",
+    "photo18.jpg","photo19.jpg","photo20.jpg","photo21.jpg","photo22.jpg",
+    "photo23.jpg","photo24.jpg",
   ],
 
   messages: [
