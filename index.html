@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Birthday Surprise 💗</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main id="app">
+    <!-- LOGIN -->
+    <section id="loginPage" class="page login-page active">
+      <div class="login-card glass-card">
+        <div class="heart-logo">♡</div>
+        <p class="eyebrow">A LITTLE SURPRISE FOR YOU</p>
+        <h1>Before we begin...</h1>
+        <p class="muted">Masukkan data kecil ini untuk membuka kejutanmu.</p>
+
+        <form id="loginForm" novalidate>
+          <label for="fullName">Nama lengkap</label>
+          <input id="fullName" type="text" placeholder="Nama lengkap" autocomplete="name" required>
+
+          <label for="birthDate">Tanggal lahir</label>
+          <input id="birthDate" type="text" inputmode="numeric"
+                 placeholder="DD-MM-YYYY" maxlength="10" required>
+
+          <p id="loginError" class="error"></p>
+          <button class="primary-btn" type="submit">Open My Surprise ♡</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- MEMORY GAME -->
+    <section id="gamePage" class="page game-page">
+      <div class="game-shell">
+        <div class="section-heading">
+          <p class="eyebrow">LEVEL 01 • A LITTLE CHALLENGE</p>
+          <h2>Find the matching hearts</h2>
+          <p>Temukan semua pasangan yang sama. Pelan-pelan saja, seperti mencari alasan untuk tersenyum. ♡</p>
+        </div>
+        <div id="gameStatus" class="game-status">0 / 6 pairs found</div>
+        <div id="gameBoard" class="game-board" aria-label="Memory card game"></div>
+        <button id="gameNext" class="primary-btn hidden">Next →</button>
+      </div>
+    </section>
+
+    <!-- COLLAGE -->
+    <section id="collagePage" class="page collage-page">
+      <div class="collage-content">
+        <div class="marquee-row marquee-left" id="rowTop"></div>
+        <div class="romance-center">
+          <div id="messageCard" class="message-card">
+            <span id="messageNumber">01 / 05</span>
+            <div id="messageIcon" class="message-icon">♡</div>
+            <h2 id="messageTitle">Happy Birthday, You.</h2>
+            <p id="messageText"></p>
+            <button id="messageNext" class="circle-btn" aria-label="Pesan berikutnya">→</button>
+          </div>
+        </div>
+        <div class="marquee-row marquee-right" id="rowBottom"></div>
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section id="finalPage" class="page final-page">
+      <div class="final-card glass-card">
+        <div class="final-heart">♥</div>
+        <p class="eyebrow">ONE LAST THING</p>
+        <h1>Semoga kita bertemu lagi<br>di umur berikutnya.</h1>
+        <p>
+          Semoga di usia yang baru, langkahmu selalu dipertemukan dengan hal-hal
+          baik. Semoga semua doa yang belum sempat terucap menemukan jalannya,
+          dan semua mimpi yang sedang kamu perjuangkan perlahan menjadi nyata.
+        </p>
+        <p>
+          Dan kalau waktu masih mengizinkan, semoga nanti kita masih punya
+          kesempatan untuk duduk, bercerita, tertawa, dan saling mengucapkan
+          selamat ulang tahun sekali lagi.
+        </p>
+        <p class="signature">Until we meet again. ♡</p>
+        <button id="restartBtn" class="secondary-btn">Replay from the beginning</button>
+      </div>
+    </section>
+  </main>
+
+  <audio id="bgMusic" loop preload="auto">
+    <source src="assets/music/birthday.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="challengeMusic" loop preload="auto">
+    <source src="assets/music/challenge.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
