@@ -41,8 +41,8 @@ Edit:
 
 ```js
 // js/config.js
-allowedName: "Faisa Nabila",
-allowedBirthDate: "03-09-2002",
+allowedName: "Name",
+allowedBirthDate: "DD-MM-YYYY",
 ```
 
 Format tanggal harus **DD-MM-YYYY**.
